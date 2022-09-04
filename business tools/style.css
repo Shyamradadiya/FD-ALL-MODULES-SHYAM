@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background: linear-gradient(to top right, #ff0000 0%, #ffff00 100%);
+
+}
+.logo{
+    width: 40%;
+}
+.header .logo img{
+    width: 80%;
+    height: 120px;
+    padding: 40px;
+}
+.mailpn{
+    width:40%;
+    margin-left: 30%;
+    margin-top: 95px;
+    font-size: 23px;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to bottom, #ff9966 0%, #ffffff 100%);
+}
+.nav ul{
+    padding-left: 35%;
+}
+.nav ul li{
+    display: inline-block;
+    color: black;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+}
+.mark{
+    border: solid 1px red;
+    background-color: rgb(253, 253, 4);
+}
+.mark marquee{
+    width: 100%;
+}
+.section{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    display: flex;
+}
+.section img{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+} 
+.section .taxi{
+    margin-left: 5%;
+    width: 40%;
+}
+.taxi h5{
+    font-size: 20px;
+    padding-top: 15px;
+    color: black;
+    opacity: 0.7;
+}
+.login{
+    width: 50%;
+    background-color: black;
+    color: white;
+    margin-left: 5%;
+    height: 700px;
+    border-radius: 10px;
+}
+.login h3{
+    font-size: 30px;
+    margin-left: 30px;
+}
+/* .login h4{
+    font-size: 22px;
+    color: rgb(98, 94, 94);
+    opacity: 0.9;
+    margin-left: 30px;
+} */
+.login form{
+    margin-top: 30px;
+    margin-left: 17%;
+}
+.login input, select, button{
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: rgb(58, 57, 57);
+    font-size: 20px;
+    text-align: center;
+    border-radius:50px;    
+}
+.login button{
+    background-color: #ffff00;
+    color: black;
+}
+.book{
+    width: 100%;
+    margin-top: 20%;
+    align-items: center;
+    text-align: center;
+}
+
+.row{
+    width: 80%;
+    margin-left: 10%;
+    height: 250px;
+    display: flex;
+}
+.col-1, .col-2, .col-3{
+    width: 30%;
+    height: 250px;
+    margin-left: 30px;
+    background-image: radial-gradient(white, yellow, orange);
+    
+}
+.col-1 h3 ,.col-2 h3,.col-3 h3{
+    margin-top: 10px;
+}
+.col-1 button, .col-2 button , .col-3 button{
+    background-color: rgb(169, 166, 166);
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    position: relative;
+}
+.section-1{
+    width: 100%;
+    margin-top: 20%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(196, 190, 190);
+    height: 1000px;
+}
+/* .col-1:hover, .col-2:hover, .col-3:hover{
+    border: solid 2px black;
+    position: sticky;
+} */
+.section-1 .col-1 img, .col-2 img, .col-3 img{
+    width: 100%;
+    height: 250px;  
+    border-radius: 10px;
+}
+.section-1 .col-1, .col-2, .col-3{
+    width: 30%;
+    height: 250px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: white;
+    }
+   
+    
+.section-1 .col-1 h3 ,.col-2 h3,.col-3 h3{
+    margin-top: 10px;
+}
+.section-1 .col-1 button, .col-2 button , .col-3 button{
+    background-color: rgb(169, 166, 166);
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    position: relative;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+.select{
+    width: 80%;
+    margin-top: -10%;
+    margin-left: 10%;
+    align-items: center;
+    text-align: center;
+    /* background-color: rgb(196, 190, 190); */
+    height: 1000px;
+    display: flex;
+}
+.col-11, .col-22, .col-33, .col-44{
+    width: 25%;
+    margin-left: 10px;
+    height: 300px;
+}
+.select .col-11 img, .col-22 img, .col-33 img , .col-44 img{
+    width: 100%;
+    height: 250px;  
+    border-radius: 10px;
+}
+.col-11 h1, .col-22 h1, .col-33 h1, .col-44 h1{
+    background-color: orange;
+    border-radius: 10%;
+    margin-top: 20px;
+}
+ .footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #ffff00;
+    margin-top: -10%;
+}
+.col-111{
+    width: 60%;
+    height: 100px;
+}
+.col-111 h1, h6{
+    margin: 10px;
+    margin-left: 20%;
+}
+.col-111 h6{
+    font-size: 20px;
+}
+.col-222 .btn{
+    width: 200%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+.footer-2{
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    height: 250px;
+    display: flex;
+}
+.col-12{
+    width: 30%;
+    font-size: 20px;
+    padding-left: 30px;
+}
+.col-13{
+    width: 30%;
+    font-size: 20px;
+}
+.col-14{
+    width: 40%;
+    margin-left: 20%;
+    font-size: 22px;
+}
+.col-14 i{
+    color: #ffff00;
+}
+.h7{
+    background-color: orange;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 0;
+}
