@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the Example of Diamond</h1>
+    <center>
+        <table>
+         <tr><td>Enter a number</td><td><input type="text" id="no" class="nomor" name="number"></td></tr>
+          <tr><td></td><td><input type=submit value="submit" id="pattern" onclick="Pyramid(document.getElementById('no').value);Pyramiddn(document.getElementById('no').value);"></td></tr>
+   
+   
+</body>
+<script>
+    function Pyramid(number)
+
+{
+  document.write("<center>"); // this to align the output in center
+  if(number>0)     
+   {
+     Pyramid(number-1);   //this is to move through the number of iterations
+     for(j=1;j<=number;j++)   //this loop is to print the numbers in ascending order
+     {
+       document.write(" "+j);
+     }
+
+     for(k=number-1;k>0;k--)    // this loop is to print the numbers in descending order
+     {
+       document.write(" "+k);
+     }
+
+   } 
+   document.write("<br>");
+
+
+} ;
+
+function Pyramiddn(number)
+{
+  document.write("<center>"); // this to align the output in center
+  if(number>0)     
+   {
+    //this is to move through the number of iterations
+
+       for(i=1;i<=number;i++)   //this loop is to print the numbers in ascending order
+     {
+       document.write(" "+i);
+     }
+
+     for(l=number-1;l>0;l--)    // this loop is to print the numbers in descending order
+     {
+       document.write(" "+l);
+     } 
+       Pyramiddn(number-1); 
+   } 
+   document.write("<br>");
+
+
+} ;
+</script>
+</html>
