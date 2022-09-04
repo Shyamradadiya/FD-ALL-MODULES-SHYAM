@@ -1,0 +1,116 @@
+:root{
+    --gray-color:#c6c9d8bf;
+    --text-gray:#c6c9d8bf;
+    --text-white:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(05,06,07,0.9)),url("../images/gallery/int 11.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.logo{
+    font-size: 42px;
+    font-weight: 900;
+}
+.navbar-brand img{
+    max-width: 120px;
+    height: auto;
+}
+.bars{
+    font-size: 42px;
+   margin-left: 60%;
+   color: var(--text-white);
+}
+.get{
+    color: var(--text-white);
+}
+.gallery-out{
+    margin-top: 60px;
+}
+.gallery img{
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.overcreate{
+    border: 0;
+    background-color: transparent;
+}
+.gallery-snap img{
+    width: 100%;
+    height: 230px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.gallery-snap img:nth-child(2){
+    margin-top: 40px;
+}
+.down{
+    font-size: 32px;
+    margin-top: 150%;
+    margin-left: 10px;
+    box-shadow: 0 0 25px 0 black;
+}
+.down-flex{
+    font-size: 32px;
+    margin-top: 150%;
+    margin-left: 50px;
+}
+.downbtn{
+    font-size: 32px;
+    margin-top: 55%;
+    margin-left: 10px;
+    box-shadow: 0 0 25px 0 black;
+}
+.downbtn-flex{
+    font-size: 32px;
+    margin-top: 55%;
+    margin-left: 50px;
+}
+.det, .bet{
+    margin-top: 25px;
+}
+.h1{
+    color: white;
+    font-size: 42px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+.colr{
+    color: white;
+}
+span{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight:400;
+}
+.setspan{
+    color: var(--gray-color);
+    justify-content: flex-end;
+    font-weight:900;
+}
+.col-4{
+    margin-left: 89%;
+    margin-top: -60px;
+}
+
+
