@@ -1,0 +1,27 @@
+body{
+    background: url(https://images.pexels.com/photos/2440079/pexels-photo-2440079.jpeg?cs=srgb&dl=pexels-ian-beckley-2440079.jpg&fm=jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    width: 50%;
+    height:auto;
+    margin:auto;
+    text-align: center;
+
+}
+table{
+    text-align: center;
+    border: solid 2px red;
+    
+
+}
+tr{
+     border: solid 2px green;
+}
+th{
+   border: solid 2px green;
+
+}
+td{
+border: solid 2px green;
+}
