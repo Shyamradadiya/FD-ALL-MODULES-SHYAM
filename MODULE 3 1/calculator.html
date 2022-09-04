@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container table tr td:nth-child(2){
+            width: 48px;
+            height: 30px;
+        }
+        .keys input{
+            width: 48px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="result" class="screen" style="background-color: black; color: white;"></td>
+                <td><input type="button" value="C" onclick="cleanscreen()" class="clean" style="background-color: red; border: none; width: 45px; height: 22px;"></td>
+            </tr>
+        </table>
+        <br>
+        <div class="keys">
+            <input type="button" value="7" class="button" onclick="display('7')" style="background-color: aqua; border: none;"></input>
+            <input type="button" value="8" class="button" onclick="display('8')" style="background-color:chartreuse; border: none;"></input>
+            <input type="button" value="9" class="button" onclick="display('9')" style="background-color: coral; border: none;"></input>
+            <input type="button" value="/" class="operator" onclick="display('/')" style="background-color:deeppink; border: none;"></input>
+            <br><br>
+            <input type="button" value="4" class="button" onclick="display('4')" style="background-color:tomato; border: none;"></input>
+            <input type="button" value="5" class="button" onclick="display('5')" style="background-color:darkred; border: none;"></input>
+            <input type="button" value="6" class="button" onclick="display('6')" style="background-color:slateblue; border: none;"></input>
+            <input type="button" value="*" class="operator" onclick="display('*')" style="background-color:violet; border: none;"></input>
+            <br><br>
+            <input type="button" value="1" class="button" onclick="display('1')" style="background-color:firebrick; border: none;"></input>
+            <input type="button" value="2" class="button" onclick="display('2')" style="background-color:green; border: none;"></input>
+            <input type="button" value="3" class="button" onclick="display('3')" style="background-color:indigo; border: none;"></input>
+            <input type="button" value="-" class="operator" onclick="display('-')" style="background-color:yellow; border: none;"></input>
+            <br><br>
+            <input type="button" value="0" class="button" onclick="display('0')" style="background-color:teal; border: none;"></input>
+            <input type="button" value="." class="button" onclick="display('.')" style="background-color:darkorange; border: none;"></input>
+            <input type="button" value="=" class="button equal-sign" onclick="solve()" style="background-color:springgreen; border: none;"></input>
+            <input type="button" value="+" class="operator" onclick="display('+')" style="background-color:slateblue; border: none;"></input>
+        </div>
+    </div>
+</body>
+<script>
+    function display(val){
+        document.getElementById('result').value += val;
+        return val;
+    }
+    function solve(){
+        let x = document.getElementById('result').value
+        let y = eval(x);
+        document.getElementById('result').value = y;
+        return y;
+    }
+    function cleanscreen(){
+        document.getElementById('result').value = ''
+    }
+</script>
+</html>

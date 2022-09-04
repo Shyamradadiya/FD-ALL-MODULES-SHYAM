@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            background-color: black;
+        }
+        ul li{
+            display: inline-block;
+            padding: 20px 25px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul id="another">
+        <li>  home </li> 
+        <li> about  </li> 
+        <li> contact </li> 
+        <li> offers </li> 
+        <li> electronics </li> 
+        <li>  kids  </li> 
+        <li> Sign up </li> 
+    </ul>
+</body>
+<script>
+    var a=document.createElement("li")
+    var b=document.createTextNode("Reach Us")
+    a.appendChild(b)
+    var c=document.getElementById('another')
+    var d=c.children[2]
+c.replaceChild(a,d)
+</script>
+</html>

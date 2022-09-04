@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Example of Replace Child</h1>
+    <ul id="list">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Product</li>
+    </ul>
+    <button onclick="get()">Click Here</button>
+</body>
+<script>
+    function get(){
+var a=document.createElement('li')
+var b=document.createTextNode("Services")
+a.appendChild(b)
+var target=document.getElementById('list')
+var c=target.children[2]
+target.replaceChild(a,c)
+    }
+</script>
+</html>

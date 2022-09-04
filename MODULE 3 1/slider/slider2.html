@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <video controls class="vid" style="height:400px; width: 500px;" autoplay muted>
+            <source src="First Air   Promotional video  30s.mp4"></source> 
+        </video>
+        <video controls class="vid" height="400px" width="500px" autoplay muted>
+            <source src="Motivational video _ This will change your mind _ whatsapp 30 sec video _.mp4" type="video/mp4"></source> 
+        </video>
+        <!-- <video width="320" height="240"  autoplay muted>
+            <source src="Motivational video _ This will change your mind _ whatsapp 30 sec video _.mp4" type="video/mp4">
+          </video> -->
+    </div>
+    <script>
+    counter = 0
+    function slide(){
+     q = document.getElementsByClassName('vid');
+        for (var c=0; c<q.length; c++){
+            q[c].style.display="none"
+        }
+        q[counter].style.display="block"
+        counter++
+        setTimeout(slide,15000)
+    }
+    slide();
+    </script>
+</body>
+</html>

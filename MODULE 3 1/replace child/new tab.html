@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="get()">Click here to open</button>
+    <button onclick="give()">Click hear to close</button>
+    <a href="replace.html"></a>
+</body>
+<script>
+    var shyam;
+    function get(){
+        shyam = window.open("replace.html", "_blank","width=500px height=300px")
+    }
+    function give(){
+        shyam.close();
+    }
+</script>
+</html>

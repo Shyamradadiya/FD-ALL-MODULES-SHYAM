@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+    <h1>I am Shyam Radadiya</h1>
+    <h1>  I am Web Developer</h1>
+    <h1>Good Morning</h1>
+    <h1>  How Are You</h1>
+    <h1>Hello World</h1>
+    <h1>Welcoms you</h1>
+    </div>
+    <button onclick="myfunction()">click here</button>
+</body>
+<script>
+function myfunction(){
+
+    var a=document.createElement("h1")
+    var b=document.createTextNode("how are you")
+    a.appendChild(b)
+    var c=document.getElementById('demo')
+    var d=c.children[0]
+    c.replaceChild(a,d)
+
+
+    var a=document.createElement("h2")
+    var b=document.createTextNode("how are you")
+    a.appendChild(b)
+    var c=document.getElementById('demo')
+    var d=c.children[1]
+    c.replaceChild(a,d)
+
+
+    var a=document.createElement("h3")
+    var b=document.createTextNode("how are you")
+    a.appendChild(b)
+    var c=document.getElementById('demo')
+    var d=c.children[2]
+    c.replaceChild(a,d) 
+    
+    var a=document.createElement("h4")
+    var b=document.createTextNode("how are you")
+    a.appendChild(b)
+    var c=document.getElementById('demo')
+    var d=c.children[3]
+    c.replaceChild(a,d)
+
+    var a=document.createElement("h5")
+    var b=document.createTextNode("how are you")
+    a.appendChild(b)
+    var c=document.getElementById('demo')
+    var d=c.children[4]
+    c.replaceChild(a,d)
+
+    var a=document.createElement("h6")
+    var b=document.createTextNode("how are you")
+    a.appendChild(b)
+    var c=document.getElementById('demo')
+    var d=c.children[5]
+    c.replaceChild(a,d)
+}
+
+
+</script>
+</html>

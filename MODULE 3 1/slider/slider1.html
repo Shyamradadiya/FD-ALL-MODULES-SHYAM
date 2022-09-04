@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img class="a1" src="Carom.jpeg" alt="" height="100%" width="100%">
+        <img class="a1" src="Gallary.jpeg" alt=""  height="100%" width="100%">
+        <img class="a1" src="gam.jpeg" alt=""  height="100%" width="100%">
+        <img class="a1" src="lion.jpeg" alt=""  height="100%" width="100%">
+        <img class="a1" src="pexels-photo-1008000.jpeg" alt=""  height="100%" width="100%">
+        <img class="a1" src="pexels-photo-1439087.jpeg" alt=""  height="100%" width="100%">
+        <img class="a1" src="pexels-photo-1854897.webp" alt=""  height="100%" width="100%">
+        <img class="a1" src="pexels-photo-697244.jpeg" alt=""  height="100%" width="100%">
+        <img class="a1" src="photography.png" alt=""  height="100%" width="100%">
+        <img class="a1" src="pngtree-vector-gallery-icon-in-creative-design-with-elements-for-mobile-png-image_1820493.jpg" alt=""  height="100%" width="100%">
+
+    </div>
+</body>
+<script>
+let select = 0
+function slider(){
+var a=document.getElementsByClassName('a1');
+for (var b=0; b<a.length; b++){
+a[b].style.display="none"
+if(select == 10){
+    select = 0
+}
+}
+a[select].style.display="block"
+select++
+setTimeout(slider,1000)
+}
+slider();
+</script>
+</html>
