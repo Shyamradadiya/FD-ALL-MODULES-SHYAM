@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family:wght@400;700&display=swap");
+
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#efedd6;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow-x:hidden;
+        }
+        h1{
+            margin: 10px;
+        }
+        .box{
+            background-color: #9535f0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 12px #9535f0;
+            transform: translateX(400%);
+            transition: transform 0.8s ease;
+        }
+        .box:nth-of-type(even){
+            transform: translateX(-400%);
+        }
+        .box.show{
+            transform: translateX(0);
+        }
+        .box h2{
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll To see the animations</h1>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+</body>
+<script>
+    const boxes = document.querySelectorAll(".box");
+
+    const checkBoxes = () => {
+        const triggerBottom = (window.innerHeight / 5) * 4;
+        boxes.forEach((box) => {
+            const boxTop = box.getBoundingClientRect().top;
+            if(boxTop < triggerBottom) box.classList.add("show");
+            else box.classList.remove("show");
+        });
+    };
+
+    window.addEventListener("scroll", checkBoxes);
+    checkBoxes()
+</script>
+</html>

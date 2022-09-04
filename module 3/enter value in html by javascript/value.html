@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Mathematical value</title>
+</head>
+<body>
+    addition :- <b id="add"></b>
+    <br><br>
+    <button onclick="btn()">Click hear to do addition</button>
+    <br><br><br><br>
+    Subscraption :- <b id="sub"></b>
+    <br><br>
+    <button onclick="bt()">Click hear to do addition</button>
+    <br><br><br><br>
+    Multiplation :- <b id="mul"></b>
+    <br><br>
+    <button onclick="b()">Click hear to do addition</button>
+    <br><br><br><br>
+    division :- <b id="di"></b>
+    <br><br>
+    <button onclick="bn()">Click hear to do addition</button>
+    <br><br><br><br>
+    Remainder :- <b id="rem"></b>
+    <br><br>
+    <button onclick="tn()">Click hear to do addition</button>
+</body>
+<script>
+    function btn(){
+        var q=12;
+        var a=10;
+        c=q+a
+        document.getElementById('add').innerHTML=c
+    }
+
+    function bt(){
+        var a=15;
+        var b=12;
+        d=a-b
+        document.getElementById('sub').innerHTML=d
+    }
+
+    function b(){
+        var p=13;
+        var w=17;
+        n=p*w
+        document.getElementById('mul').innerHTML=n
+    }
+
+    function bn(){
+        var m=18;
+        var o=19;
+        e=m/o
+        document.getElementById('di').innerHTML=e
+    }
+
+    function tn(){
+        var u=10;
+        var v=6;
+        x=u%v
+        document.getElementById('rem').innerHTML=x
+    }
+</script>
+</html>

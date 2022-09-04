@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input List</title>
+</head>
+<body>
+    <h1>This is Example of Input List with Java Script</h1>
+    <ul id="get">
+    </ul>
+</body>
+<script>
+    var a=["home","about","product","services","contact"]
+    for( var give of a){
+    var b=document.createElement('li')
+    var c=document.createTextNode(give)
+    b.appendChild(c)
+    var d=document.getElementById('get')
+    d.appendChild(b)
+    }
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change in Html and Css</title>
+</head>
+<body>
+    <h1 id="cg">This is my first HTML page</h1>
+    <br><br>
+    <button onclick="chg()">click hear</button>
+</body>
+<script>
+    function chg(){
+        document.getElementById('cg').innerHTML="Hello World"
+        document.getElementById('cg').style.background="green"
+        document.getElementById('cg').style.fontSize="80px"
+        document.getElementById('cg').style.width="15%"
+        document.getElementById('cg').style.borderRadius="10%"
+    }
+</script>
+</html>

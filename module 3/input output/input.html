@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output in java script</title>
+</head>
+<body>
+    <center>
+    <h1>This is an input written in Java Script</h1>
+    
+        <h1>Form Vallidation</h1>
+        First Name :
+        <input id="got" type="text" placeholder="Enter Your First Name" required>
+        <br>
+        <br>
+        Last Name : 
+        <input id="give" type="text" placeholder="Enter Your Second Name" required>
+        <br><br>
+        <button onclick="get()"> Click Hear to see Output</button>
+    </center>
+</body>
+<script>
+    function get(){
+        var a=document.getElementById('got').value;
+        var b=document.getElementById('give').value;
+
+        document.write( a +" "+ b )
+    }
+</script>
+</html>

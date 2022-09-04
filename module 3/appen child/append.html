@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Append Child HTML With Java Script</h1>
+    <div>
+        <ul id="pre">
+
+        </ul>
+    </div>
+</body>
+<script>
+    var section=["Home","Services","Product", "About Us", "Contact Us"]
+    for(var wish of section){
+        var v=document.createElement('li')
+        var r=document.createTextNode(wish)
+        v.appendChild(r)
+        var w=document.getElementById('pre')
+        w.appendChild(v)
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt</title>
+</head>
+<body>
+    Username:- <b id="user"></b>
+    <br><br>
+    Password:- <b id="pas"></b>
+    <br><br>
+    <button onclick="add()">Click Hear</button>
+</body>
+<script>
+    function add(){
+        var q=prompt("Enter Your Username","");
+        var w=prompt("Enter Your Password","")
+        document.getElementById('user').innerHTML=q ;
+        document.getElementById('pas').innerHTML=w
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CSS</title>
+</head>
+<body>
+    <h1>This is Example of Dynamic CSS with Java Script</h1>
+    <p id="give">Hello This is Dynamic CSS</p>
+    <button onmouseover="get()">Click Hear To See Dynamic CSS</button>
+</body>
+<script>
+    function get(){
+        document.getElementById('give').style.background="blue";
+        document.getElementById('give').style.fontSize="35px";
+        document.getElementById('give').style.border="solid 2px green";
+        document.getElementById('give').style.borderRadius="30px";
+        document.getElementById('give').style.color="yellow";
+        // document.getElementById('give').style.background="blue";
+
+
+    }
+</script>
+</html>
