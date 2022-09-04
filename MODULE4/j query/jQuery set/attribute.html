@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute Set</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is the Example of Attribute Set in Jquery</h1>
+    <h4>This is the Link of Top Namkeen Ind. Pvt. Ltd <a id="get" href="https://www.indiamart.com/topnamkeenindustries/profile.html">Top Namkeen</a></h4>
+    <br>
+    <br>
+    <button>Click here To change the link</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#get").attr("href":"https://www.indiamart.com/topnamkeenindustries/profile.html/jquery/",
+            "title":"some text here");
+        });
+    });
+</script>
+</html>

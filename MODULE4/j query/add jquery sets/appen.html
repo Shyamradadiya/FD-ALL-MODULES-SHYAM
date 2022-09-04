@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appen Add List and Text</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    <h1>This is the Example of Appen Add Items with JQuery</h1>
+    <h3>Hello I am </h3>
+    <h3>How Are you </h3>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li> Product</li>
+    </ul>
+    <button id="btn-1">Click to add Paragraph</button>
+    <button id="btn-2">Click here to add list</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn-1").click(function(){
+            $("h3").append("<b>Shyam Radadiya</b>.");
+        });
+        $("#btn-2").click(function(){
+            $("ul").append("<li>Contact</li>")
+        });
+    });
+</script>
+</html>

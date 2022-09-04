@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #s{
+            width: 30%;
+            background-color: red;
+            height: 30px;
+        }
+        #b{
+            width: 30%;
+            height: 30px;
+            background-color: green;
+        }
+        #c{
+            width: 30%;
+            height: 30px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click Hear to see a hidden object</h1>
+    <div id="s"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    <button>click hear</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#s").css("background","pink")
+            $("#b").css("background","yellow")
+            $("#c").css("background","red")
+        });
+    });
+</script>
+</html>

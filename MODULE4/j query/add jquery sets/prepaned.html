@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prepended Jquery add</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is the Example of Prepended Jquery Add</h1>
+    <h4>Shyam Radadiya</h4>
+    <h4>Rupeshsir Rajput</h4>
+    <ul>
+        <li>
+            About
+        </li>
+        <li>
+            Product
+        </li>
+        <li>
+            Contact
+        </li>
+    </ul>
+    <button id="btn-1">Click here to add paragraph</button>
+    <button id="btn-2">Click here to add list items</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn-1").click(function(){
+            $("h4").prepend("<b>Hello How Are You -- </b>");
+        });
+        $("#btn-2").click(function(){
+            $("ul").prepend("<li>Home</li>");
+        });
+    });
+</script>
+</html>

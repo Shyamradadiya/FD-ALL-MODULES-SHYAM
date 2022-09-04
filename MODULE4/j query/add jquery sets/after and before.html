@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before aqnd after adding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is the Example of Adding Before And After with JQuery</h1>
+    <img src="carousel-3.jpg" alt="" width="30%" height="150px">
+    <br><br>
+    <button id="btn-1">Click to Add Before</button>
+    <br><br>
+    <button id="btn-2">Click to add after</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn-1").click(function(){
+            $("img").before("<b>Hello I am </b>");
+        });
+        $("#btn-2").click(function(){
+        $("img").after("<b>Shyam Radadiya</b>");
+    });
+    });
+</script>
+</html>

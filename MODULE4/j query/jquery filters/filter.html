@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h1>This is the Example of Jquery Filters</h1>
+
+    <h4>NOTE: If you type anything in search box it will display</h4>
+    <input type="text" placeholder="Search Here...." id="search">
+
+    <br><br>
+
+    <table>
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>Contact NO.</td>
+            <td>Address</td>
+            <td>E.Mail</td>
+        </tr>
+
+        </thead>
+        <tbody id="myTable">
+
+        <tr>
+            <td>Shyam Radadiya</td>
+            <td>9858488456</td>
+            <td>Umiya Chock Rajkot</td>
+            <td>shyamradadiya1212@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Sanjay Bharvadiya</td>
+            <td>8888888888</td>
+            <td>KKV Hall Rajkot</td>
+            <td>sanjay1212@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Yagnik Bhesaniya</td>
+            <td>985475895</td>
+            <td>Mavdi Chock Rajkot</td>
+            <td>yagnik1212@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Rupesh Rajput</td>
+            <td>9858488456</td>
+            <td>Inndira circle Rajkot</td>
+            <td>Rupeshtops1212@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Ankit Satasiya</td>
+            <td>9858488456</td>
+            <td>Umiya Rajkot</td>
+            <td>ankit1212@gmail.com</td>
+        </tr>
+
+
+        <tr>
+            <td>Akhil</td>
+            <td>9858488456</td>
+            <td>astron Chock Rajkot</td>
+            <td>girnari1212@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Shyam Radadiya</td>
+            <td>9858488456</td>
+            <td>Umiya Chock Rajkot</td>
+            <td>shyamradadiya1212@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Shyam Radadiya</td>
+            <td>9858488456</td>
+            <td>Umiya Chock Rajkot</td>
+            <td>shyamradadiya1212@gmail.com</td>
+        </tr> <tr>
+            <td>Shyam Radadiya</td>
+            <td>9858488456</td>
+            <td>Umiya Chock Rajkot</td>
+            <td>shyamradadiya1212@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Shyam Radadiya</td>
+            <td>9858488456</td>
+            <td>Umiya Chock Rajkot</td>
+            <td>shyamradadiya1212@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Shyam Radadiya</td>
+            <td>9858488456</td>
+            <td>Umiya Chock Rajkot</td>
+            <td>shyamradadiya1212@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Shyam Radadiya</td>
+            <td>9858488456</td>
+            <td>Umiya Chock Rajkot</td>
+            <td>shyamradadiya1212@gmail.com</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    $(document).ready(function(){
+  $("#search").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</html>

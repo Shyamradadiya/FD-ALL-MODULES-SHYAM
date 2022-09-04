@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add CSS Classes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .important{
+            font-weight: 800;
+            font-size: 35px;
+            background-color: red;
+        }
+        .color{
+            color: green;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is the Example of Adding CSS Classes with JQuery</h1>
+    <h5>Hello World</h5>
+    <h5>How are you</h5>
+    <p>I am Shyam Radadiya</p>
+    <p>I am Web Developer</p>
+    <h2>WE are Hear For Any Help</h2>
+    <h3>Here Some Text</h3>
+    <button>click here</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h5").addClass("color");
+            $("h2").addClass("important");
+            $("h3").addClass("important color")
+        })
+    })
+</script>
+</html>

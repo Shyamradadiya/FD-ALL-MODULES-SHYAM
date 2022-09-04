@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>load Anything</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>This is the Example of Load Anything With JQuery</h1>
+    <h3>Hello World! <i>How Are You</i><b>I am Shyam Radadiya</b></h3>
+    <button>Click Here</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h3").load("");
+        });
+    });
+</script>
+</html>

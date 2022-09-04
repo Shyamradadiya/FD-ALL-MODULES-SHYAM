@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #col{
+           width: 50%;
+            border: 2px solid black;
+            background-color: red;
+            height: 200px;
+        }
+        #col-cm{
+            width: 50%;
+            border: 2px solid black;
+            background: green;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+        <div id="col">hello</div>
+        <div id="col-cm">world</div>
+    <button> click here</button>
+    <script>
+
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#col").css("background","green")
+                $("#col-cm").css("background","red")
+            });
+        });
+        </script>
+</body>
+
+</html>

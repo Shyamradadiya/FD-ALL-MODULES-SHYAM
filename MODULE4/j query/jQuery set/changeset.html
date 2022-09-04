@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change HTML and Text set</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    <h1>This is the Example of Change HTML and Text with set JQuery Menthod</h1>
+    <h3 id="get">Old Text: I am Shyam Radadiya</h3>
+    <h3 id="give">Old HTML: I am Web Developer</h3>
+    <br><br>
+    <button id="btn-1">Click here to see old and new text</button>
+    <br><br>
+    <button id="btn-2">Click here to see old and new HTML</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn-1").click(function(){
+            $("#get").text(function(i,origintext){
+                return "old text:" + origintext + " New Text: Hello World! ( index: " + i + ")";
+            });
+        });
+        $(document).ready(function(){
+            $("#btn-2").click(function(){
+                $("#give").html(function(i, origintext){
+                    return "old HTML: " + origintext + "New HTML: Hello Friends! (index: " + i +")";
+                });
+            });
+        });
+    });
+</script>
+</html>

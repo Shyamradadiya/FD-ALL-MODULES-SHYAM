@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .ancestors {
+            width: 80%;
+            height: 250px;
+            border: solid 2px black;
+    }
+    </style>
+    
+</head>
+<body>
+    <h2>This is the Example of Parent Function</h2>
+    <div class="ancestors">
+        <h6>Hello World!
+            <li>Welcome
+                <i>Good Luck</i>
+            </li>
+        </h6>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("i").parent().css({"border":"solid 2px black","color":"red"});
+    });
+</script>
+</html>
