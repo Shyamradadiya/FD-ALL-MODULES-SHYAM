@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .container{
+            width: 600px;
+            margin: 40px auto;
+            overflow: auto;
+        }
+        .inner img{
+            height: 650px;
+            width: 600px;
+            display: none;
+        }
+        .inner .active{
+            display: inline-block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <img src="image-1.png" class="active" alt="">
+            <img src="image-10.png" alt="">
+            <img src="image-15.png" alt="">
+            <img src="image-2.png" alt="">
+            <img src="image-3.png" alt="">
+            <img src="image-4.png" alt="">
+            <img src="image-5.png" alt="">
+            <img src="image-6.png" alt="">
+            <img src="image-7.png" alt="">
+            <img src="image-8.png" alt="">
+            <img src="image-9.png" alt="">
+            <img src="image-15.png" alt="">
+        </div>
+        <button class="prev">PREVIOUS</button>
+        <button class="next">NEXT</button>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".next").click(function(){
+            var nextimg=$(".active");
+            var nextot = nextimg.next();
+            
+            if(nextot.length){
+                nextimg.removeClass("active")
+                nextot.addClass("active")
+            }
+        });
+
+        $(".prev").click(function(){
+            var previmg=$(".active");
+            var prevot = previmg.prev();
+            
+            if(prevot.length){
+                previmg.removeClass("active")
+                prevot.addClass("active")
+            }
+        });
+
+    })
+</script>
+</html>
