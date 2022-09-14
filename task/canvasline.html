@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <canvas  id="line" width="550" height="100px" style="border: solid 2px red;">
+
+        </canvas>
+    </center>
+</body>
+<script>
+    var line = document.getElementById("line");
+    var straight = line.getContext("2d");
+    straight.moveTo(25,50);
+    straight.lineTo(525,50);
+    straight.strokeStyle="red";
+    straight.stroke();
+</script>
+</html>

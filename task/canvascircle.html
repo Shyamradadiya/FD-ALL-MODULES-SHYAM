@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <canvas id="circle" width="250px" height="250px" style="border:solid 2px black;">
+
+    </canvas>
+</center>
+</body>
+<script>
+    var circle=document.getElementById("circle");
+    var radius=circle.getContext("2d");
+    radius.arc( 125 , 125 , 100 , 0 , 2  * Math.PI);
+    radius.fillStyle="blue";
+    radius.fill();
+    radius.strokeStyle="red";
+    radius.stroke();
+</script>
+</html>
